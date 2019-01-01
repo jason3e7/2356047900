@@ -40,4 +40,32 @@ Note:
 
 ---
 
+## CSIE_strace
+### 25
+
+* flag 格式為 FLAG{...}
+
+* [strace](reverseLevel0/file/strace)
+
+Note:
+* [strace](http://man7.org/linux/man-pages/man1/strace.1.html)
+* linux cmd, file, 基本判斷這個檔案是什麼
+
+---
+
+## CSIE_strace 心得
+* file ./starce
+  * `./strace: ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, for GNU/Linux 2.6.32, BuildID[sha1]=5d905db040e676a3979ba0f3afaa101acb5e37a6, stripped`
+* ./strace
+  * `find the flag in system call!`
+* strace ./strace
+
+Note:
+* [strace](https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/strace.html)
+* strace, 可以做什麼
+  * strsize
+* 這個題目是怎麼寫出來的
+
+---
+
 # The End
