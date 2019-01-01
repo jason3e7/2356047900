@@ -124,4 +124,29 @@ Note:有參考IDA
 
 ---
 
+## picoCTF2017_Coffee
+### 25
+
+* flag 格式為 flag_{...}
+
+* [Coffee.class](reverseLevel0/file/Coffee.class)
+
+Note:
+* compiled Java class data
+
+---
+
+## picoCTF2017_Coffee 心得
+* [Command line Java Decompiler](https://github.com/kwart/jd-cmd)
+  * [jd-cli](reverseLevel0/file/jd-cli-0.9.2-dist.zip) 
+* copy code
+* fix code
+* javac
+* java
+
+Note:
+* problem.java
+
+---
+
 # The End
