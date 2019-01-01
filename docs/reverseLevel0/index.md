@@ -26,4 +26,18 @@ Note:
 
 ---
 
+## EasyCTF_Hexable
+### 25
+
+* flag 格式為 easyctf{...}
+
+* [hexable](reverseLevel0/file/hexable)
+
+Note:
+* strings 就有答案了
+  * `strings hexedit | grep ctf`
+* 不知道和上一題的差異是什麼 !?
+
+---
+
 # The End
