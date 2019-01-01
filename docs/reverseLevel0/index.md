@@ -68,4 +68,22 @@ Note:
 
 ---
 
+## EasyCTF_adder
+### 25
+
+* ﬂag 格式為 easyctf{...}
+
+* [strace](reverseLevel0/file/strace)
+
+Note:
+* ELF 64-bit LSB executable
+
+---
+
+## EasyCTF_adder 心得
+* ./adder
+  * `Enter three numbers!`
+
+---
+
 # The End
