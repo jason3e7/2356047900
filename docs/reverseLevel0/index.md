@@ -92,4 +92,36 @@ Note:
 
 ---
 
+## EasyCTF_LuckyGuess
+### 25
+
+* flag 格式為 easyctf{...}
+
+* [LuckyGuess](reverseLevel0/file/LuckyGuess)
+
+Note:
+* ELF 64-bit LSB executable
+
+---
+
+## EasyCTF_LuckyGuess 心得
+* objdump
+``` 
+400b8d:	cmp    eax,DWORD PTR [rbp-0x94]
+400b93:	jne    400bf3 <main+0xfb>
+```
+* gdb, 在執行中 show rbp-0x94
+
+Note:有參考IDA
+* gdb 操作要整個在另外一篇
+  * b main
+  * r
+  * ni
+  * `p *(int *)($rbp-0x94)`
+  * n
+* [如何使用 GDB Debug](https://www.puritys.me/docs-blog/article-329-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-GDB-Debug.html)
+* [How to print -0x4(%rbp) in gdb?](https://stackoverflow.com/questions/5455832/how-to-print-0x4rbp-in-gdb)
+
+---
+
 # The End
