@@ -73,7 +73,7 @@ Note:
 
 * ﬂag 格式為 easyctf{...}
 
-* [strace](reverseLevel0/file/strace)
+* [adder](reverseLevel0/file/adder)
 
 Note:
 * ELF 64-bit LSB executable
@@ -83,6 +83,12 @@ Note:
 ## EasyCTF_adder 心得
 * ./adder
   * `Enter three numbers!`
+* objdump
+  * main
+
+Note:
+* `objdump -d -M intel --no-show-raw-insn`
+  * `cmp  eax,0x539`
 
 ---
 
