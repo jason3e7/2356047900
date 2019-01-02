@@ -1,0 +1,6 @@
+===== Welcome to the magic calculator =====
+We got some equations here, but the operator is missing.
+Can you help us?
+----- wave 1/100 -----
+57 ? 81 = 4617
+which operator(+/-/*)? Your math is bad...
