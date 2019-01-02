@@ -48,6 +48,62 @@ Note:
 
 ---
 
+## 林思辰_read-asm
+### 50
+
+* 「在 _start 中 call foo (line 32) 後 rax 的值為何？」
+* Note : 將解出的字串放入 MyFirstCTF{} 中，若為數字則以十六進制表示 0x 開頭
+* 可以試著編譯完再用 gdb 觀察
+* [read-asm.asm](reverseLevel1/file/read-asm.asm)
+
+Note:
+```
+欸阿明，你在幹嘛
+喔我在讀組合語言壓
+齁那個又不會考讀X喔
+可...可是自從我讀了之後考試都考 100 分欸
+像是老師出的這題
+「在 _start 中 call foo (line 32) 後 rax 的值為何？」
+花了我 0.0001 秒就答完惹，然後帥氣地轉身離開了呢
+```
+
+---
+
+## 林思辰_read-asm 心得
+* 可以以用 objdump, 觀察各階段產出的狀態
+* ld, The GNU linker
+  * -s, Omit all symbol information from the output file.
+* gdb
+  * `b *_start`
+    * `b *0x4000f5` 
+  * `disas *_start`
+  * `ni`, `si`
+  * `info all-registers`
+
+Note:
+* uname -a
+  * `Linux ubuntu 4.15.0-43-generic #46~16.04.1-Ubuntu SMP Fri Dec 7 13:31:08 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux`
+* `nasm -f elf64 run-asm.asm`, 加上 -g 好像沒什麼差, 使用 objdump, 可以看到完整的程式碼.
+* `ld -s -o read-asm read-asm.o && ./read-asm`, 使用 objdump, \_start 不見了.
+  * Segmentation fault (core dumped)
+* `ld -o read-asm read-asm.o && ./read-asm`, 使用 objdump, 程式碼都在.
+  * nothing
+
+---
+
+## 林思辰_read-asm tools
+* [Using gdb for Assembly Language Debugging](https://www.cs.umb.edu/~cheungr/cs341/Using_gdb_for_Assembly.pdf)
+* [GNU 的連結工具 (ld, nm, objdump, ar)](http://sp1.wikidot.com/gnulinker)
+* [Linker Script初探 - GNU Linker Ld手冊略讀](http://wen00072.github.io/blog/2014/03/14/study-on-the-linker-script/)
+* [[心得] 個人的 x86 組合語言觀念筆記](https://www.ptt.cc/bbs/ASM/M.1286960542.A.5B9.html)
+* [A quick primer for those who prefer to use a command line debugger.](http://ece-research.unm.edu/jimp/310/nasm/gdb.pdf), gcc 那一段會失敗.
+* [計算機體系結構與NASM入門](https://www.smwenku.com/a/5b859fe02b71775d1cd36868/), 看了這段有 ld -s, 卡了一小段時間.
+
+Note:
+* [How to debug NASM Assembly that produces segfault before hitting _start](https://stackoverflow.com/questions/47357224/how-to-debug-nasm-assembly-that-produces-segfault-before-hitting-start), 奇特的技巧.
+
+---
+
 ## 林思辰_run-asm
 ### 50
 
@@ -59,8 +115,6 @@ Note:
 * 編譯 asm 檔案並執行
 
 * [run-asm.asm](reverseLevel1/file/run-asm.asm)
-
-Note:
 
 ---
 
