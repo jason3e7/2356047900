@@ -31,6 +31,8 @@ Note:
 
 Note:
 * cHVzaCAweDdkMjEyMTIxCnB1c2ggMHg0NzZlNjk1MgpwdXNoIDB4NzQ1MzVmNjMKcHVzaCAweDMxNDczNDZkCnB1c2ggMHg1ZjQ0NmU2YwpwdXNoIDB4NDY1ZjU1MzAKcHVzaCAweDU5N2I0NjU0CnB1c2ggMHg0Mzc0NzM3MgpwdXNoIDB4Njk0Njc5NGQK
+* [Hex to ASCII text converter](https://www.rapidtables.com/convert/number/hex-to-ascii.html)
+* [Reverse a string](http://string-functions.com/reverse.aspx)
 
 ---
 
@@ -60,6 +62,7 @@ Note:
 Note:
 * zGs7@ABp"sIp/3bn@-:A-G]CllNNK
 * shift, 0x1f < char < 0x7f
+* [Caesar Cipher](https://www.dcode.fr/caesar-cipher)
 
 ---
 
