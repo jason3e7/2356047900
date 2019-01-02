@@ -24,4 +24,28 @@ Note:
 
 ---
 
+## 林思辰_find
+### 50
+
+* 阿明，你看看我撿到的神祕檔案
+* 滾啦
+* 嗚嗚...嗚...
+* 傷心的 H0w 哥獨自一人打開了檔案
+* 突然有一個聲音說道
+* 找出 flag 吧！ H0w 哥
+
+* strings 是個好用的工具
+
+* [find](reverseLevel1/file/find)
+
+Note:
+* strings 就有答案了
+  * `strings find | egrep 'MyFirstCTF{[a-zA-Z0-9_]+}'`
+* [三分鐘教你輕鬆掌握 grep 命令中的正則表達式](https://linuxstory.org/grep-regular-expressions/)
+* [Regular Expressions In grep examples](https://www.cyberciti.biz/faq/grep-regular-expressions/)
+* [Searching Files on UNIX](http://www.robelle.com/smugbook/regexpr.html)
+* [Linux的正則表達式grep,egrep](https://kknews.cc/zh-tw/other/g8o22ne.html)
+
+---
+
 # The End
