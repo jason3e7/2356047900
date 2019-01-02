@@ -30,6 +30,36 @@ Note:
   * hex-to-ascii
 
 Note:
+* cHVzaCAweDdkMjEyMTIxCnB1c2ggMHg0NzZlNjk1MgpwdXNoIDB4NzQ1MzVmNjMKcHVzaCAweDMxNDczNDZkCnB1c2ggMHg1ZjQ0NmU2YwpwdXNoIDB4NDY1ZjU1MzAKcHVzaCAweDU5N2I0NjU0CnB1c2ggMHg0Mzc0NzM3MgpwdXNoIDB4Njk0Njc5NGQK
+
+---
+
+## 林思辰_encrypt
+### 100
+
+* 小美，妳看這不是古羅馬嗎
+* 難不成我們穿越回到古代了嗎
+* 好像是喔，妳看那個人長的是不是很像凱薩阿
+* 好帥喔 OwO
+
+* 找出加密的方法並解密一個特別的字串
+
+* [encrypt](reverseLevel2/file/encrypt)
+
+Note:
+* ELF 64-bit LSB shared object
+
+---
+
+## 林思辰_encrypt 心得
+* 用很髒的解法解的, 可能不是原本的作法.
+  * strings
+  * exec, find rule.
+  * decrypt
+
+Note:
+* zGs7@ABp"sIp/3bn@-:A-G]CllNNK
+* shift, 0x1f < char < 0x7f
 
 ---
 
