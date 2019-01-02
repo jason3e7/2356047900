@@ -48,4 +48,49 @@ Note:
 
 ---
 
+## 林思辰_run-asm
+### 50
+
+* 跑跑跑向前跑
+* 阿...阿呃
+* H0w 哥你怎麼了
+* 我...我...我快不行了，跑完 asm 這項重責大任就交給你了
+
+* 編譯 asm 檔案並執行
+
+* [run-asm.asm](reverseLevel1/file/run-asm.asm)
+
+Note:
+
+---
+
+## 林思辰_run-asm 心得
+* analysis code
+  * `global _star`, nasm
+  * `mov rax, 1`, elf64
+
+Note:
+* [What is global _start in assembly language?](https://stackoverflow.com/questions/17898989/what-is-global-start-in-assembly-language)
+* uname -a
+  * `Linux ubuntu 4.15.0-43-generic #46~16.04.1-Ubuntu SMP Fri Dec 7 13:31:08 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux`
+* `nasm -f elf64 run-asm.asm`
+* `ld -s -o run-asm run-asm.o`
+* `./run-asm`
+
+---
+
+## 林思辰_run-asm nasm
+* [NASM Hello World for x86 and x86_64 Intel Mac OS X (get yourself an updated nasm with brew)](https://gist.github.com/FiloSottile/7125822)
+* [Hello, world!](http://asm.sourceforge.net/intro/hello.html)
+* [x86_64 NASM Assembly Quick Reference ("Cheat Sheet")](https://www.cs.uaf.edu/2017/fall/cs301/reference/x86_64.html)
+* online compile
+  * [compile nasm online](https://rextester.com/l/nasm_online_compiler)
+  * [Assembler - NASM](https://www.jdoodle.com/compile-assembler-nasm-online)
+  * [godbolt](https://godbolt.org/)
+
+Note:
+* [8.20 How to get GCC to generate assembly code](http://www.delorie.com/djgpp/v2faq/faq8_20.html)
+
+---
+
 # The End
