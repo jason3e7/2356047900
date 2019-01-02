@@ -1,0 +1,7 @@
+===== Welcome to pi calculator =====
+give me pi with certain length
+----- wave example -----
+L = 5
+3.1415
+----- wave 1/100 -----
+L = 93

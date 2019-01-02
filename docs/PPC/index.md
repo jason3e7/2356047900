@@ -49,4 +49,20 @@ Note:title:"第一次練習 PPC 就上手"
 
 ---
 
+## pi
+### 200
+
+* 幫我算算圓周率
+
+* nc 140.110.112.29 5130
+
+Note:
+* [Python 計算任意位數的圓周率π](https://blog.csdn.net/lnotime/article/details/82319973)
+  * 馬青公式
+  * 其實最多100位, 可以 hard code.
+* `**`, 冪
+* `//`, 取整除
+
+---
+
 # The End
