@@ -138,6 +138,8 @@ n = 7 ^ 5827369
 00000000000000000000111
 10110001110101100101110
 ```
+* [Hex,decimal,octal,binary converter](https://www.rapidtables.com/convert/number/hex-dec-bin-converter.html)
+* [XOR Calculator](http://xor.pw/)
 
 ---
 
