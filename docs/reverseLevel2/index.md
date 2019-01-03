@@ -91,6 +91,10 @@ Note:
 
 Note:
 * 要學習從 gdb 去了解, F5大絕招
+```
+num = 0
+num = x[i] + 26 * num
+```
 
 ---
 
