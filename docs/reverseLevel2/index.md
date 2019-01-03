@@ -66,4 +66,36 @@ Note:
 
 ---
 
+## 林思辰_encode
+### 100
+
+* 欸阿明，你知道怎麼把英文字母轉成數字嗎
+* 就是把 ABC 變成 123 壓
+* 喔喔很簡單啊
+* 難道阿明知道 flag ????!!!!
+* Note : 將解出的字串放入 MyFirstCTF{} 中，若為數字則以十六進制表示 0x 開頭
+
+* 試著找出編碼的方法
+
+* [encode](reverseLevel2/file/encode)
+
+Note:
+* ELF 64-bit LSB shared object
+
+---
+
+## 林思辰_encode 心得
+* 需要好好讀 code 的題目.
+* %, mod.
+* 開頭的 A 要去掉.
+
+Note:
+* 要學習從 gdb 去了解, F5大絕招
+```
+num = 0
+num = x[i] + 26 * num
+```
+
+---
+
 # The End
