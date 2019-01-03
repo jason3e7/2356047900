@@ -92,6 +92,55 @@ Note:
 
 ---
 
+## EasyCTF_liar
+### 25
+
+* flag 格式為 easyctf{...}
+
+* [liar](reverseLevel0/file/liar)
+
+Note:
+* ELF 64-bit LSB shared object
+* [Linux 執行時尋找 symbol 的流程以及 shared library 相關知識](https://medium.com/fcamels-notes/linux-%E5%9F%B7%E8%A1%8C%E6%99%82%E5%B0%8B%E6%89%BE-symbol-%E7%9A%84%E6%B5%81%E7%A8%8B%E4%BB%A5%E5%8F%8A-shared-library-%E7%9B%B8%E9%97%9C%E7%9F%A5%E8%AD%98-b0cf1e19cbf3)
+* 需要好好讀 code 的題目.
+
+---
+
+## EasyCTF_liar IDA pro
+* view, open subviews, proximity browser
+  * 右鍵, graph disassembly view
+* F5, 大絕招
+
+Note:
+* [IDA Pro Hex-Rays Decompiler Simple Tricks](https://hitcon.org/2015/CMT/download/day1-d-r4.pdf)
+
+---
+
+## EasyCTF_liar code review
+```
+m = n ^ 0x58EB29
+g[i] = (m * i) ^ f[i]
+```
+* `g[i] = ((n ^ 0x58EB29) * i) ^ f[i]`  
+* `(g[i] ^ f[i]) / i = n ^ 0x58EB29`
+  * a xor b = c, c xor a = b, b xor c = a.
+
+Note:
+```
+(97  ^ 102) / 1 = 7
+(115 ^ 125) / 2 = 7
+(121 ^ 108) / 3 = 7
+(99  ^ 127) / 4 = 7
+(116 ^ 87)  / 5 = 7
+(102 ^ 76)  / 6 = 7
+n = 7 ^ 5827369
+10110001110101100101001
+00000000000000000000111
+10110001110101100101110
+```
+
+---
+
 ## EasyCTF_LuckyGuess
 ### 25
 
@@ -146,24 +195,6 @@ Note:
 
 Note:
 * problem.java
-
----
-
-## EasyCTF_liar
-### 25
-
-* flag 格式為 easyctf{...}
-
-* [liar](reverseLevel0/file/liar)
-
-Note:
-* ELF 64-bit LSB shared object
-* [Linux 執行時尋找 symbol 的流程以及 shared library 相關知識](https://medium.com/fcamels-notes/linux-%E5%9F%B7%E8%A1%8C%E6%99%82%E5%B0%8B%E6%89%BE-symbol-%E7%9A%84%E6%B5%81%E7%A8%8B%E4%BB%A5%E5%8F%8A-shared-library-%E7%9B%B8%E9%97%9C%E7%9F%A5%E8%AD%98-b0cf1e19cbf3)
-
----
-
-## EasyCTF_liar 心得
-* the flag is %s
 
 ---
 
