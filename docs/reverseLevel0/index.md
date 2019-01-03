@@ -113,10 +113,12 @@ Note:
 
 Note:
 * [IDA Pro Hex-Rays Decompiler Simple Tricks](https://hitcon.org/2015/CMT/download/day1-d-r4.pdf)
+* 要學習從 gdb 去了解, F5大絕招
 
 ---
 
 ## EasyCTF_liar code review
+* 要學習 scanf 進來的參數會在哪裡 in assembly
 ```
 m = n ^ 0x58EB29
 g[i] = (m * i) ^ f[i]
@@ -140,6 +142,43 @@ n = 7 ^ 5827369
 ```
 * [Hex,decimal,octal,binary converter](https://www.rapidtables.com/convert/number/hex-dec-bin-converter.html)
 * [XOR Calculator](http://xor.pw/)
+
+---
+
+## EasyCTF_ezreverse
+### 25
+
+* 將得到的答案放進 MyFirstCTF{} 中
+
+* [ezreverse](reverseLevel0/file/ezreverse)
+
+Note:
+* ELF 64-bit LSB executable
+* 需要好好讀 code 的題目.
+* IDA pro 大絕招
+  * 要學習從 gdb 去了解, F5大絕招
+
+---
+
+## EasyCTF_ezreverse code review
+* 要學習 argv 進來的參數會在哪裡 in assembly
+* `v7 != 111 || v6 != 125 || v4 != v8 - 10 || v5 != 53 || v8 != v7 + 3`
+
+Note:
+```
+char s[] = "?????"
+v4 = s[0] + 1
+v5 = s[1] + 2
+v6 = s[2] + 3
+v7 = s[3] + 4
+v8 = s[4] + 5
+(v7 != 111 || v6 != 125 || v4 != v8 - 10 || v5 != 53 || v8 != v7 + 3)
+v4 = 104
+v5 = 53
+v6 = 125
+v7 = 111
+v8 = 114
+```
 
 ---
 
@@ -168,7 +207,7 @@ Note:有參考IDA
   * b main
   * r
   * ni
-  * `p *(int *)($rbp-0x94)`
+  * `p \*(int \*)($rbp-0x94)`
   * n
 * [如何使用 GDB Debug](https://www.puritys.me/docs-blog/article-329-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-GDB-Debug.html)
 * [How to print -0x4(%rbp) in gdb?](https://stackoverflow.com/questions/5455832/how-to-print-0x4rbp-in-gdb)
