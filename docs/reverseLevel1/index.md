@@ -2,7 +2,7 @@
 # reverseLevel1
 ### 就上手
 
-jason3e7 20190102
+jason3e7 20190103
 
 Note:title:"第一次練習 reverseLevel1 就上手"
 
@@ -21,6 +21,30 @@ Note:title:"第一次練習 reverseLevel1 就上手"
 Note:
 * strings 就有答案了
   * `strings reverse | grep CTF`
+
+---
+
+## 陳廷宇_Baby_Assembly
+### 50
+
+* [BabyAssembly.exe](reverseLevel1/file/BabyAssembly.exe)
+
+Note:
+* PE32 executable for MS Windows (console) Intel 80386 32-bit
+
+---
+
+## 陳廷宇_Baby_Assembly 心得
+* 大部分問題都在處理 VCRUNTIME140D.DLL
+  * 放在和執行檔同一層
+* code review
+  * open file
+
+Note:
+* [THE ONE-CLICK FIX FOR DLL ERRORS](https://www.dll-files.com/)
+* 還好這次只有兩個 dll, 其他的 case 是不是直接安裝 Visual Studio, 比較快解決問題.
+  * vcruntime140d.dll
+  * ucrtbased.dll
 
 ---
 
