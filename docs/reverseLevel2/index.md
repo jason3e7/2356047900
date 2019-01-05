@@ -2,7 +2,7 @@
 # reverseLevel2
 ### 就上手
 
-jason3e7 20190102
+jason3e7 20190105
 
 Note:title:"第一次練習 reverseLevel2 就上手"
 
@@ -63,6 +63,32 @@ Note:
 * zGs7@ABp"sIp/3bn@-:A-G]CllNNK
 * shift, 0x1f < char < 0x7f
 * [Caesar Cipher](https://www.dcode.fr/caesar-cipher)
+
+---
+
+## 林思辰_mutate
+### 100
+
+* H0w 哥，你知道邏輯設計嗎
+* 喔喔我知道阿 就那個 and or not 還有一個什麼的 我忘了
+* 哈哈不知道齁 笑你
+
+* 試著找出 mutate 字串的方法
+
+* [mutate](reverseLevel2/file/mutate)
+
+Note:
+* ELF 64-bit LSB shared object
+
+---
+
+## 林思辰_mutate 心得
+* 需要好好讀 code 的題目.
+* `(i + 32) ^ byte_201120[i]) != *((_DWORD *)&off_201020 + i)`
+* 手動解會比較慢, 要寫程式解比較快.
+
+Note:
+* 要學習從 gdb 去了解, F5大絕招
 
 ---
 
