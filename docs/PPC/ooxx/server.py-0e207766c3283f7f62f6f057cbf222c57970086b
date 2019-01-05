@@ -1,0 +1,83 @@
+#!/usr/bin/env python3
+import random
+from secret import flag
+
+template = """
++---+---+---+
+| {} | {} | {} |
++---+---+---+
+| {} | {} | {} |
++---+---+---+
+| {} | {} | {} |
++---+---+---+
+"""
+
+PLAYING = 0
+ENDGAME = 1
+
+class OOXXError(Exception):
+    pass
+
+class GridOccupiedError(OOXXError):
+    pass
+
+def base(n, x):
+    ans = []
+    while n > 0:
+        ans.append(n % x)
+        n //= x
+    return ans
+
+class OOXX:
+    def __init__(self, board):
+        self.board = board
+    @staticmethod
+    def index(x, y):
+        return x * 3 + y
+    def out(self):
+        stones = " OX"
+        print(template.format(*map(lambda x: stones[x], self.board)))
+    def status(self):
+        for i in range(3):
+            if abs(sum([self.board[self.index(i, j)] for j in range(3)])) >= 3: return ENDGAME
+            if abs(sum([self.board[self.index(j, i)] for j in range(3)])) >= 3: return ENDGAME
+        if abs(sum([self.board[self.index(i, i)] for i in range(3)])) >= 3: return ENDGAME
+        if abs(sum([self.board[self.index(i, 2-i)] for i in range(3)])) >= 3: return ENDGAME
+        if self.board.count(0) == 0: return ENDGAME
+        return PLAYING
+    def place(self, move, stone):
+        if self.board[move] != 0:
+            raise GridOccupiedError
+        self.board[move] = stone
+    def random(self, stone):
+        while True:
+            move = random.randint(0, 8)
+            if self.board[move] == 0:
+                self.board[move] = stone
+                return move
+
+flag = base(int.from_bytes(flag, 'big'), 9)
+
+print("===== Welcome to play ooxx =====")
+
+print(template.format(*range(10)))
+
+for i in range(len(flag)):
+    print("----- wave : {}/{} -----".format(i + 1, len(flag)))
+    board = OOXX([0] * 9)
+    print("ai move : {}".format(flag[i]))
+    board.place(flag[i], -1)
+    board.out()
+    while True:
+        # user move
+        user = int(input("your move : ").strip())
+        board.place(user, 1)
+        board.out()
+        if board.status() == ENDGAME:
+            break
+        # ai move
+        move = board.random(-1)
+        print("ai move : {}".format(move))
+        board.out()
+        if board.status() == ENDGAME:
+            break
