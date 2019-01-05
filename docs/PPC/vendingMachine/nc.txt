@@ -1,0 +1,14 @@
+===== Welcome to the vending machine =====
+Come buy some flag or fodds
+But notice that this vending machine has some technical issue
+You need to guess the correct price in order to purchase it.
+
+======= menu =======
+1. apple juice
+2. instant noodles
+3. chips
+4. flag
+> 4
+money : 1
+that's not enough money (vending machine is angry)
+
