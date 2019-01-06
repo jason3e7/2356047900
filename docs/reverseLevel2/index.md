@@ -2,9 +2,39 @@
 # reverseLevel2
 ### 就上手
 
-jason3e7 20190105
+jason3e7 20190107
 
 Note:title:"第一次練習 reverseLevel2 就上手"
+
+---
+
+## 陳廷宇_XorZero
+### 100
+
+* [Encrypted](reverseLevel2/file/Encrypted)
+
+---
+
+## 陳廷宇_XorZero 心得
+* text 檔案要怎麼解碼.
+* [XOR cipher](https://www.wikiwand.com/en/XOR_cipher)
+* 要花時間思考一下, 自己要怎麼撰寫 encrypt, decrypt 程式.
+
+Note:
+* [XOR Cracker](https://wiremask.eu/tools/xor-cracker/)
+  * ELF 64-bit LSB executable
+* text 檔案要怎麼解碼, 其他題目也會遇到, 要思考怎麼思考.
+  * file analysis
+    * exec analysis
+* XOR cipher, 大部分是文字加解密.
+  * [xortool](https://github.com/hellman/xortool)
+  * [Xortool](https://www.aldeid.com/wiki/Xortool)
+  * [XORSearch](https://blog.didierstevens.com/programs/xorsearch/)
+  * [XOR Files With Python](https://www.megabeets.net/xor-files-python/)
+  * [XOR Cipher](https://www.dcode.fr/xor-cipher)
+  * [XOR Online Encrypt & Decrypt](https://md5decrypt.net/en/Xor/)
+  * [XOR Decryptor](https://www.browserling.com/tools/xor-decrypt)
+* [Nowhere to Hide: Three methods of XOR obfuscation](https://blog.malwarebytes.com/threat-analysis/2013/05/nowhere-to-hide-three-methods-of-xor-obfuscation/), 好像是不錯的文章, 有空可以看看.
 
 ---
 
