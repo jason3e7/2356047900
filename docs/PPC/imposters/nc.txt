@@ -1,0 +1,9 @@
+===== Welcome to imposter number game =====
+Some numbers are special, like (1 + 2 + 3 + 4 + 5) can divide 12345.
+We call this kind of number 'imposter'
+We need you to find me some imposters with certain length without any 0 in it, which means 1000 is not valid.
+----- wave example -----
+L = 5
+12345
+----- wave 1/100 -----
+L = 10
