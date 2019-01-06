@@ -1,0 +1,11 @@
+===== Welcome to Get the Root =====
+I need you to solve some polynomial for me, just give me one of the roots of the polynomial
+----- wave : example -----
+polynomial : 1 -2 1 (which means x^2 - 2x + 1)
+root : 1 (just one of the roots, and gurantee to be integer)
+----- wave : 1/100 -----
+polynomial : 1 92 -2461 -158468 5307180 -40559904
+root : Traceback (most recent call last):
+  File "./server.sage.py", line 28, in <module>
+    root = int(raw_input().strip())
+ValueError: invalid literal for int() with base 10: ''
