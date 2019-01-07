@@ -194,7 +194,7 @@ Note:
 
 ---
 
-## EasyCTF_LuckyGuess 心得
+## EasyCTF_LuckyGuess 心得1
 * objdump
 ``` 
 400b8d:	cmp    eax,DWORD PTR [rbp-0x94]
@@ -211,6 +211,20 @@ Note:有參考IDA
   * n
 * [如何使用 GDB Debug](https://www.puritys.me/docs-blog/article-329-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-GDB-Debug.html)
 * [How to print -0x4(%rbp) in gdb?](https://stackoverflow.com/questions/5455832/how-to-print-0x4rbp-in-gdb)
+
+---
+
+## EasyCTF_LuckyGuess 心得2
+* `qmemcpy(v13, "g", 0x88uLL);`
+* `.text:0000000000400B95 mov [rbp+var_98], 0`
+
+Note:
+* IDA pro 分析完, 使用 gdb jump
+* gdb 操作要整個在另外一篇
+  * b main
+  * ni x ?
+  * jump 0x400B95
+  * c
 
 ---
 
