@@ -1,0 +1,9 @@
+===== Welcome to the primes =====
+We need some primes here
+Give me some primes with certain length and its digits sum is prime too
+For example, (1 + 0 + 1) = 2 is prime, 101 is prime, so 101 is what I want
+----- wave example -----
+L = 3
+101
+----- wave 1/100 -----
+L = 43
