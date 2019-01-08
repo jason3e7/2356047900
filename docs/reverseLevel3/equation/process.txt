@@ -1,0 +1,92 @@
+__int64 v15; // [rsp+40h] [rbp-A0h]
+__int64 v16; // [rsp+48h] [rbp-98h]
+__int64 v17; // [rsp+50h] [rbp-90h]
+__int64 v18; // [rsp+58h] [rbp-88h]
+__int64 v19; // [rsp+60h] [rbp-80h]
+__int64 v20; // [rsp+68h] [rbp-78h]
+__int64 v21; // [rsp+70h] [rbp-70h]
+__int64 v22; // [rsp+78h] [rbp-68h]
+__int64 v23; // [rsp+80h] [rbp-60h]
+__int64 v24; // [rsp+88h] [rbp-58h]
+__int64 v25; // [rsp+90h] [rbp-50h]
+__int64 v26; // [rsp+98h] [rbp-48h]
+__int64 v27; // [rsp+A0h] [rbp-40h]
+__int64 v28; // [rsp+A8h] [rbp-38h]
+__int64 v29; // [rsp+B0h] [rbp-30h]
+__int64 v30; // [rsp+B8h] [rbp-28h]
+char v31[24]; // [rsp+C0h] [rbp-20h]
+unsigned __int64 v32; // [rsp+D8h] [rbp-8h]
+
+v32 = __readfsqword(0x28u);
+v15 = 0xCFEDB159LL;
+v16 = 0xCFED66A9LL;
+v17 = 0xCF78B1A9LL;
+v18 = 0x6AEDB1A9LL;
+v19 = 0xCFEDB150LL;
+v20 = 0xCFED4BA9LL;
+v21 = 0xCF75B1A9LL;
+v22 = 0x65EDB1A9LL;
+v23 = 0x8CEB9F64LL;
+v24 = 0x8CEB31C6LL;
+v25 = 0x8C799FC6LL;
+v26 = 0x48EB9FC6LL;
+v27 = 0x8CEB9F62LL;
+v28 = 0x8CEB6EC6LL;
+v29 = 0x8C729FC6LL;
+v30 = 0x44EB9FC6LL;
+__isoc99_scanf("%16s", v31, envp);
+for ( i = 0; i <= 3; ++i )
+  *(&v11 + i) = *(_DWORD *)&v31[4 * i];
+for ( j = 0; j <= 3; ++j )
+  *(&v15 + j) -= v11 + (v12 & (unsigned int)~(255 << 8 * j));
+for ( k = 0; k <= 3; ++k )
+  *(&v15 + k + 4) -= v12 + (v11 & (unsigned int)~(255 << 8 * k));
+for ( l = 0; l <= 3; ++l )
+  *(&v15 + l + 8) -= v13 + (v14 & (unsigned int)~(255 << 8 * l));
+for ( m = 0; m <= 3; ++m )
+  *(&v15 + m + 12) -= v14 + (v13 & (unsigned int)~(255 << 8 * m));
+v9 = 0;
+for ( n = 0; n <= 15; ++n )
+  v9 |= *(&v15 + n);
+if ( !v9 )
+  printf("MyFirstCTF{%s}", v31);
+
+---
+
+v9 = 0;
+v15[0 ~ 15] = 0;
+
+v11, v12
+
+v15 = 0xCFEDB159LL;
+v16 = 0xCFED66A9LL;
+v17 = 0xCF78B1A9LL;
+v18 = 0x6AEDB1A9LL;
+v19 = 0xCFEDB150LL;
+v20 = 0xCFED4BA9LL;
+v21 = 0xCF75B1A9LL;
+v22 = 0x65EDB1A9LL;
+
+v13, v14
+
+v23 = 0x8CEB9F64LL;
+v24 = 0x8CEB31C6LL;
+v25 = 0x8C799FC6LL;
+v26 = 0x48EB9FC6LL;
+v27 = 0x8CEB9F62LL;
+v28 = 0x8CEB6EC6LL;
+v29 = 0x8C729FC6LL;
+v30 = 0x44EB9FC6LL;
+
+---
+
+v15 = 0xCFEDB159LL;
+
+v11 + (v12 & (unsigned int)~(255 << 8 * j));
+
+v11 + (v12 & (unsigned int)~(00000000000000000000000011111111 << 0));
+
+v11 + v12 & 11111111111111111111111100000000
+
+---
+
