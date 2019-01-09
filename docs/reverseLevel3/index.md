@@ -2,7 +2,7 @@
 # reverseLevel3
 ### 就上手
 
-jason3e7 20190108
+jason3e7 20190109
 
 Note:title:"第一次練習 reverseLevel3 就上手"
 
@@ -58,6 +58,38 @@ Note:
   * `255 << 8 \* x`
   * `255 << (8 \* m)`
 * hex to ascii, 建議不要自行 decode, 有可能會看錯.
+
+---
+
+## 陳廷宇_TableNChair
+### 150
+
+* [TableNChair](reverseLevel3/file/TableNChair)
+
+---
+
+## 陳廷宇_TableNChair 心得
+* 需要好好讀 code 的題目.
+```
+__int64 __fastcall sub_4006F6(unsigned int a1)
+{
+  __int64 result; // rax
+  signed int i; // [rsp+10h] [rbp-4h]
+
+  result = a1;
+  for ( i = 0; i <= 758; i += 2 )
+  {
+    result = (unsigned __int8)byte_601080[i];
+    if ( (_BYTE)result == (_BYTE)a1 )
+      return (unsigned __int8)byte_601080[i + 1];
+  }
+  return result;
+}
+```
+
+Note:
+* 要學習從 gdb 去了解, F5大絕招
+* find s1, byte_601080
 
 ---
 
