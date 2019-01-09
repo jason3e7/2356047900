@@ -42,12 +42,18 @@ Note:
 
 ---
 
-## temperature
+## translation
 ### 200
 
-* 我需要你幫忙把華氏轉攝氏
+* nc 140.110.112.29 5125
 
-* nc 140.110.112.29 5127
+Note:
+* 會有誤差 QQ
+```
+from math import pow
+count = count + (ord(x) * pow(base, i))
+```
+* python3 `int.from_bytes(b'string', 'big')`
 
 ---
 
@@ -78,6 +84,15 @@ Note:
   * [What's the correct way to convert bytes to a hex string in Python 3?](https://stackoverflow.com/questions/6624453/whats-the-correct-way-to-convert-bytes-to-a-hex-string-in-python-3/6624521)
 * [數制](https://www.convertworld.com/zh-hant/numerals/)
 * [Is there a way to substring a string?](https://stackoverflow.com/questions/663171/is-there-a-way-to-substring-a-string)
+
+---
+
+## temperature
+### 200
+
+* 我需要你幫忙把華氏轉攝氏
+
+* nc 140.110.112.29 5127
 
 ---
 

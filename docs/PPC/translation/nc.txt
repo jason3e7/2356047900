@@ -1,0 +1,8 @@
+========== Welcome ==========
+I give you a string, you need to translate it to integer in big endian
+----- wave : example -----
+string : ab (all the string will contain lowercase alphabets only)
+integer : 24930 ( which comes from 97 * 256 + 98 = 24930)
+----- wave : 1/100 -----
+string : captainamerica
+integer : YOU SUCKS...
