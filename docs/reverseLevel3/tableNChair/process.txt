@@ -1,0 +1,56 @@
+puts("Give me flag:");
+fgets(s, 128, stdin);
+s[strlen(s) - 1] = 0;
+for ( i = 0; ; ++i )
+{
+  v4 = i;
+  if ( v4 >= strlen(s) )
+    break;
+  v3 = sub_4006F6(s[i]);
+  s[i] = v3;
+}
+if ( !strncmp(s1, s, 30uLL) )
+  printf("Yes, that is flag", s);
+else
+  printf("NOOOOOOOOOOOO", s);
+
+---
+
+__int64 __fastcall sub_4006F6(unsigned int a1)
+{
+  __int64 result; // rax
+  signed int i; // [rsp+10h] [rbp-4h]
+
+  result = a1;
+  for ( i = 0; i <= 758; i += 2 )
+  {
+    result = (unsigned __int8)byte_601080[i];
+    if ( (_BYTE)result == (_BYTE)a1 )
+      return (unsigned __int8)byte_601080[i + 1];
+  }
+  return result;
+}
+
+---
+
+s1
++u;B3k**LUZgKMTuThCeh24hfMJCu$
+
+byte_601080
+0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 0 2 4 6 8 
+Lcq79OB+3T]dGWd-g8Mnzw-E;V2\0]pGAkxo?{.9cfb")1e;u~
+e;1C|(]dFZ6HI'H.4J~^[0?{5)`mSb2\m2ru8#_h4J{g,z!_%N
+jqd-ZQy4 Fv?;V,z%N7tLc+A'x/RXr)1*[se\6!_NiEa}$*[[0
+ZQ\6jqQ zwWK1CI'Yy{gEaXrq7~^V5Q q7hMV5$|,zl*}$k3B+
+|(FZtsKPP=WKQ #:5)l*>/^XseruGWtsb"v?`mo%<@KPo%Yy/R
+P=(,m2e;xoI'Lc7t^Xy4CL-E$|Jjru@D F6HOpo%H.1CCLXr0]
+?{&!5)2\:vGWV5Mnw`2\pG~^aBcf[0H.;VCL4J>/k3U<aBu~d-
+Ak>/g8'x4J FEaP='xAk.9">aB+A%N8#B+.9GW@D@DSb)13Ty4
+Q :vu~+Ao%g8$|MnhM1C-EI'TUhMg8<@zwU<JjD&}$OpfYEaV5
+R}TU F3TYy`mYyFZse<@Jjk3zwhMaB_hD&ZQ@DiINiu~Mn9Ow`
+D&l*jq=SU<#:/Rm2FZR}|(0]cfiI!_=S]dnl&!8#~^Op">Sbe;
+Ni7tiI9O-E&!,zWK}$6Hjq^X7t'x#:%Nw`y4Akxo0]^X(,v?H.
+k3]dKP(,JjR}/Rw`=Sb";VruXr{gWKR}nl">cfpG8#6H!__h3T
+SbpGts*[P==SLcnlZQb"$|xo&!v?[0d-m2{g+A(,\6*[`m_h#:
+>/KP">.9|(?{seq75)l*:v:vTUU<fYB+nlD&ts<@)1\6NiCLiI
+9OTUfYOpfY
