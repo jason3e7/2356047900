@@ -1,0 +1,36 @@
+===== Welcome to mysterious hanoi towers =====
+There are three mysterious hanoi towers in my village
++-----+-----+-----+
+|     |     |     |
+|  0  |  1  |  2  |
+|     |     |     |
++-----+-----+-----+
+Help me solve the puzzles
+----- wave : example -----
+Here is the initial state : 
++-----+-----+-----+
+|  x  |     |     |
+| xxx |     |     |
+|xxxxx|     |     |
++-----+-----+-----+
+Here is the final state : 
++-----+-----+-----+
+|     |     |  9  |
+|     |     | 999 |
+|     |     |99999|
++-----+-----+-----+
+Answer : 02012102101202 (which means move the top disk on tower 0 to tower 2, move the top disk on tower 0 to tower 1...)
+----- wave : 1/100 -----
+Here is the initial state : 
++-----+-----+-----+
+|     |     |     |
+|     |     |     |
+|  K  |KKKKK| KKK |
++-----+-----+-----+
+Here is the final state : 
++-----+-----+-----+
+|     |     |     |
+|     |  p  |     |
+| ppp |ppppp|     |
++-----+-----+-----+
+Answer : Wrong answer
