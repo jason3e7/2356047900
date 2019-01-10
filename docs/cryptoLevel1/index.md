@@ -18,6 +18,13 @@ Note:title:"第一次練習 cryptoLevel1 就上手"
 * 請破解以下凱薩密碼:
 * IylhrHSSJAM{QRJrqYZYEYotoaHIemgw}
 
+Note:
+* RSA
+* ECC
+* xor
+* DSA
+* AES
+
 ---
 
 # The End
