@@ -65,6 +65,9 @@ Note:
 * strace, 可以做什麼
   * strsize
 * 這個題目是怎麼寫出來的
+* [write (system call)](https://www.wikiwand.com/en/Write_(system_call))
+  * [File descriptor](https://www.wikiwand.com/en/File_descriptor)
+* [Linux Syscall Reference](https://syscalls.kernelgrok.com/)
 
 ---
 
@@ -250,6 +253,18 @@ Note:
 
 Note:
 * problem.java
+
+---
+
+## NoConName2014_inBINcible
+### 25
+
+* 將得到的答案放進 MyFirstCTF{} 中
+
+* [inbincible](reverseLevel0/file/inbincible)
+
+Note:
+* ELF 32-bit LSB executable
 
 ---
 
