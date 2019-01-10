@@ -161,4 +161,17 @@ num = x[i] + 26 * num
 
 ---
 
+## 林思辰_search
+### 100
+
+* S.E.A.R.C.H. 就是搜尋 嗯...該不會就是搜尋就有 flag 了吧
+* 欸 H0w 哥這樣提示太明顯了啦
+* 不過要怎麼搜尋壓 可...可...可惡
+
+* ida pro 是個好用的工具
+
+* [search](reverseLevel2/file/search)
+
+---
+
 # The End
